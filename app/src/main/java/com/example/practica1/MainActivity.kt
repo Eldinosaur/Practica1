@@ -2,6 +2,7 @@ package com.example.practica1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -9,7 +10,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         imprimirDatos()
+
+        //val btn: Button = findViewById(R.id.btn_confirmar)
+       //btn.setOnClickListener{ }
     }
+
+    //Acceso a los elementos del activity
+    //1. findViewById
+    //2. plugin android-extensions
+    //3. viewBinding
     fun imprimirDatos(){
 
         btn_confirmar.setOnClickListener{
