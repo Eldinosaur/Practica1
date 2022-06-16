@@ -7,4 +7,7 @@
     <string name="txt_resultado">[Resultado]</string>
     <string name="hint_nacimiento">Ingrese el año</string>
     <string name="btn_verificar">Verificar</string>
+    <string name="txt_AnuncioEdad">¿Eres mayor de edad?</string>
+    <string name="txt_ingresoEdad">Ingresa tu edad</string>
+    <string name="btn_Procesar">Procesar</string>
 </resources>
