@@ -8,12 +8,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        imprimirDatos()
     }
     fun imprimirDatos(){
-        var nombres = edt_nombre.text
-        var apellidos = edt_apellido.text
+
         btn_confirmar.setOnClickListener{
-            var resultado = nombres +" "+apellidos
+            val nombres = edt_nombre.text.toString()
+            val apellidos = edt_apellido.text.toString()
+            val resultado ="Bienvenido $nombres $apellidos"
+                //nombres +" "+apellidos
             txt_resultado.setText(resultado)
         }
     }
