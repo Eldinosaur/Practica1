@@ -17,4 +17,5 @@
     <string name="radio_Femenino">Femenino</string>
     <string name="check_terminos">Aceptar Terminos</string>
     <string name="btn_enviar">Enviar</string>
+    <string name="generaciones">GENERACIONES</string>
 </resources>
