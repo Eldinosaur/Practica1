@@ -18,4 +18,7 @@
     <string name="check_terminos">Aceptar Terminos</string>
     <string name="btn_enviar">Enviar</string>
     <string name="generaciones">GENERACIONES</string>
+    <string name="txt_registro_correcto">Registro correcto</string>
+    <string name="txt_tus_datos">Tus datos</string>
+    <string name="btn_aceptar">Aceptar</string>
 </resources>

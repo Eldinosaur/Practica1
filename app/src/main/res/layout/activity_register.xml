@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.105" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/edtNombresR"
         android:layout_width="match_parent"
         android:layout_height="47dp"
         android:layout_marginHorizontal="16dp"
@@ -40,7 +40,7 @@
         app:layout_constraintVertical_bias="0.193" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/edtEdadR"
         android:layout_width="match_parent"
         android:layout_height="47dp"
         android:layout_marginHorizontal="16dp"
@@ -71,20 +71,21 @@
         app:layout_constraintVertical_bias="0.4">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/rbMasculinoR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:checked="true"
             android:text="@string/radio_Masculino" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/rbFemeninoR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/radio_Femenino" />
     </RadioGroup>
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/cbTerminos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -98,7 +99,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnEnviarR"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -110,7 +111,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/cbTerminos"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
