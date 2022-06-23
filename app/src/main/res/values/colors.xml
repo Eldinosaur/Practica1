@@ -16,5 +16,7 @@
     <color name="amarillo_suave">#FFEB3B</color>
     <color name="crema">#E6D1CF</color>
     <color name="morado">#973CD8</color>
+    <color name="rojo">#D32114</color>
+    <color name="verde">#8BC34A</color>
 
 </resources>
