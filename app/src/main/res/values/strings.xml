@@ -22,4 +22,5 @@
     <string name="txt_tus_datos">Tus datos</string>
     <string name="btn_aceptar">Aceptar</string>
     <string name="datos_mascota">Datos de tu mascota</string>
+    <string name="regresar_inicio">Regresar al inicio</string>
 </resources>

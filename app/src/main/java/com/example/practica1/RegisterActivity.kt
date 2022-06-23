@@ -18,6 +18,7 @@ class RegisterActivity : AppCompatActivity() {
             val edad = edtEdadR.text.toString()
             val genero = if(rbMasculinoR.isChecked) rbMasculinoR.text.toString() else rbFemeninoR.text.toString()
 
+
             if(nombres.isEmpty()){
                 Toast.makeText(this,  "Debe ingresar los nombres",Toast.LENGTH_LONG).show()
                 return@setOnClickListener
