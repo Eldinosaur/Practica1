@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_mascota.*
+import kotlinx.android.synthetic.main.activity_mascota_respuesta.*
 import kotlinx.android.synthetic.main.activity_register.*
 
 class MascotaActivity : AppCompatActivity() {
@@ -17,7 +18,20 @@ class MascotaActivity : AppCompatActivity() {
         btnEnviarMascota.setOnClickListener{
             val nombreMascota = edtNombreMascota.text.toString();
             val edadMascota = edtEdadMascota.text.toString();
-            val tipoMascota = if(rbPerro.isChecked) rbPerro.text.toString() else if(rbGato.isChecked) rbGato.text.toString() else rbConejo.text.toString()
+            var tipoMascota =
+            if(rbPerro.isChecked) {
+                   rbPerro.text.toString()
+                                }else if(rbGato.isChecked) {
+                    rbGato.text.toString()
+                                }else{
+                    rbConejo.text.toString()
+                                }
+
+            val vRabia =if(cbRabia.isChecked) cbRabia.text.toString() else null
+            val vParvo =if(cbParvovirus.isChecked) cbParvovirus.text.toString() else null
+            val vTriple =if(cbTFelina.isChecked) cbTFelina.text.toString() else null
+            val vPoli =if(cbPolivalente.isChecked) cbPolivalente.text.toString() else null
+            val vPerreras =if(cbPerreras.isChecked) cbPerreras.text.toString() else null
 
             if(nombreMascota.isEmpty()){
                 Toast.makeText(this,  "Debes ingresar el nombre de tu mascota", Toast.LENGTH_LONG).show()
@@ -25,15 +39,19 @@ class MascotaActivity : AppCompatActivity() {
             }else if(edadMascota.isEmpty()){
                 Toast.makeText(this,  "Debes ingresar la edad de tu mascota", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
+            }else if(!cbRabia.isChecked||!cbParvovirus.isChecked||!cbTFelina.isChecked||!cbPolivalente.isChecked||!cbPerreras.isChecked){
+                Toast.makeText(this,  "Debes seleccionar al menos una vacuna", Toast.LENGTH_LONG).show()
+                return@setOnClickListener
             }
             val bundle = Bundle().apply {
-                putString("KEY_NOMBRES", nombreMascota)
+                putString("KEY_NOMBRE", nombreMascota)
                 putString("KEY_EDAD", edadMascota)
                 putString("KEY_TIPO", tipoMascota)
-            }
-            if(cbRabia.isChecked){
-                val vRabia = cbRabia.text.toString()
-                bundle.putString("KEY_RABIA" ,vRabia)
+                putString("KEY_RABIA",vRabia)
+                putString("KEY_PARVO",vParvo)
+                putString("KEY_TRIPLE",vTriple)
+                putString("KEY_POLI",vPoli)
+                putString("KEY_PERRERAS",vPerreras)
             }
 
             val intent = Intent(this,MascotaRespuestaActivity::class.java).apply{

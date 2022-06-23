@@ -11,11 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="100dp"
-        android:text="Informacion de tu mascota"
-        android:textColor="@color/black"
         android:drawableStart="@drawable/animals"
         android:drawablePadding="15dp"
+        android:text="Informacion de tu mascota"
+        android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,6 +30,7 @@
         android:text="Tu tipo de mascota es:"
         android:textColor="@color/black"
         android:textStyle="bold"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
@@ -39,9 +39,10 @@
         android:id="@+id/txtTipoMascota"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:text="@string/txt_resultado"
         android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -51,9 +52,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="75dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="125dp"
         android:text="@string/txt_resultado"
         android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTipoMascota" />
 
@@ -65,17 +67,19 @@
         android:layout_marginTop="50dp"
         android:text="@string/txt_resultado"
         android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNombreMascota" />
 
     <TextView
-        android:id="@+id/txtVacunasMascota"
+        android:id="@+id/txtRabia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="100dp"
         android:text="@string/txt_resultado"
         android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtEdadMascota" />
 
@@ -83,10 +87,81 @@
         android:id="@+id/btnRegresar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="50dp"
         android:text="@string/regresar_inicio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtVacunasMascota" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPerreras" />
+
+    <TextView
+        android:id="@+id/txtParvo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        android:text="@string/txt_resultado"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEdadMascota" />
+
+    <TextView
+        android:id="@+id/txtTFelina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/txt_resultado"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRabia" />
+
+    <TextView
+        android:id="@+id/txtPoli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="100dp"
+        android:text="@string/txt_resultado"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtParvo" />
+
+    <TextView
+        android:id="@+id/txtPerreras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/txt_resultado"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTFelina" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="40dp"
+        android:text="Sus vacunas"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEdadMascota" />
+
+    <ImageView
+        android:id="@+id/imgTipo"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTipoMascota"
+        app:srcCompat="@drawable/dog" />
 </androidx.constraintlayout.widget.ConstraintLayout>
