@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/appMovil/Practica1/app/src/main/res/drawable/shape_rectangle.xml" value="0.1945" />
+        <entry key="..\:/appMovil/Practica1/app/src/main/res/layout-land/screen_layout.xml" value="0.2677083333333333" />
         <entry key="..\:/appMovil/Practica1/app/src/main/res/layout/activity_destination.xml" value="0.33" />
         <entry key="..\:/appMovil/Practica1/app/src/main/res/layout/activity_edad.xml" value="0.33" />
         <entry key="..\:/appMovil/Practica1/app/src/main/res/layout/activity_frame.xml" value="0.15726495726495726" />
@@ -13,7 +14,9 @@
         <entry key="..\:/appMovil/Practica1/app/src/main/res/layout/activity_mascota.xml" value="0.33" />
         <entry key="..\:/appMovil/Practica1/app/src/main/res/layout/activity_mascota_respuesta.xml" value="0.25" />
         <entry key="..\:/appMovil/Practica1/app/src/main/res/layout/activity_register.xml" value="0.22" />
+        <entry key="..\:/appMovil/Practica1/app/src/main/res/layout/lab4_layout.xml" value="0.1573321932449765" />
         <entry key="..\:/appMovil/Practica1/app/src/main/res/layout/linear_layout.xml" value="0.1573321932449765" />
+        <entry key="..\:/appMovil/Practica1/app/src/main/res/layout/screen_layout.xml" value="0.1573321932449765" />
       </map>
     </option>
   </component>

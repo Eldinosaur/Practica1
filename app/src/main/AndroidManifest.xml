@@ -29,11 +29,6 @@
             android:name=".MascotaActivity"
             android:exported="true"
             android:theme="@style/TemaMascotas">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".DestinationActivity"
@@ -42,11 +37,6 @@
             android:name=".RegisterActivity"
             android:exported="true"
             android:theme="@style/MyTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Generaciones2Activity"
